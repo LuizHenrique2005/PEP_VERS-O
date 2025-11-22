@@ -78,7 +78,7 @@ export default function Adicionar() {
             </div>
             <div>
                 <label className="font-bold mb-1 text-[#07122D]">  
-                    CPF
+                    CPF (Sem caracteres especiais)
                 </label>
                 <input
                   type="text"
