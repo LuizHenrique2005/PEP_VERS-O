@@ -38,16 +38,6 @@ export async function obterPacientes() {
     }
 }
 
-export async function obterPacienteNome(nome: string) {
-    try {
-        // const resposta = await api.get(`/pacientes/${nome}`)
-        // return resposta.data
-        return pacientes.filter(p => p.nome.toLowerCase() === nome.toLowerCase());
-    } catch (erro) {
-        throw erro;
-    }
-}
-
 export async function obterPacienteId(id: number) {
     try {
         // const resposta = await api.get(`/pacientes/${id}`)
@@ -61,24 +51,6 @@ export async function obterPacienteId(id: number) {
 export async function adicionaPaciente(paciente: PatienteType) {
     try {
         const resposta = await api.post(`/pacientes`, paciente)
-        return resposta.data
-    } catch (erro) {
-        throw erro;
-    }
-}
-
-export async function editarPaciente(id:number) {
-     try {
-        const resposta = await api.put(`/pacientes/${id}`)
-        return resposta.data
-    } catch (erro) {
-        throw erro;
-    }
-}
-
-export async function deletarPaciente(id:number) {
-     try {
-        const resposta = await api.delete(`/pacientes/${id}`)
         return resposta.data
     } catch (erro) {
         throw erro;

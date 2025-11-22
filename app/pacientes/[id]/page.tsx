@@ -30,7 +30,7 @@ export default function PacientePagina() {
       <div className="ml-[18%] flex-1">
         <NavBar />
         {paciente && (
-          <div className="flex w-full pt-10 px-2 justify-evenly flex-wrap flex-col">
+          <div className="flex w-full pt-10 px-5 justify-evenly flex-wrap flex-col">
             <div className="flex w-full">
               <img src="/Images/Placeholder.png" alt="" />
               <div className="flex flex-1 flex-col ml-2 justify-between">

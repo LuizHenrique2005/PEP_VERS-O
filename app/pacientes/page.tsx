@@ -29,7 +29,7 @@ export default function Pacientes() {
       <div className="ml-[18%] flex-1">
         <NavBar />
         <div className="w-full flex my-10 px-20 items-center justify-end">
-            <a href="paciente/add" className="bg-[#07122D] py-3 px-8 text-white font-bold text-2xl transition-transform duration-200 hover:scale-105">
+            <a href="pacientes/adicionar" className="bg-[#07122D] py-3 px-8 text-white font-bold text-2xl transition-transform duration-200 hover:scale-105">
                 + Adicionar Paciente
             </a>
         </div>
