@@ -12,7 +12,6 @@ export default function Pacientes() {
   const lidarPaciente = () => {
     obterPacientes()
       .then((resposta) => {
-        // setPacientes(resposta.pacientes)
         setPacientes(resposta);
       })
       .catch((erro) => {
