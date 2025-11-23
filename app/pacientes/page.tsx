@@ -12,16 +12,18 @@ export default function Pacientes() {
   const lidarPaciente = () => {
     obterPacientes()
       .then((resposta) => {
+        console.log('Pacientes carregados:', resposta);
         setPacientes(resposta);
       })
       .catch((erro) => {
-        console.log(erro);
+        console.error('Erro ao carregar pacientes:', erro);
+        alert('Erro ao carregar pacientes. Verifique o console para mais detalhes.');
       });
   };
 
   useEffect(() => {
     lidarPaciente();
-  });
+  }, []);
   return (
     <div className="w-full h-auto flex">
       <SideBar />
