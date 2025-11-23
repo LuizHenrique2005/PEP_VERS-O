@@ -1,4 +1,9 @@
 version: 1
+backend:
+  phases:
+    build:
+      commands:
+        - echo "Backend já configurado, pulando build"
 frontend:
   phases:
     preBuild:
