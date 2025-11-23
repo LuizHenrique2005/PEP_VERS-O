@@ -9,12 +9,15 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@aws-amplify/storage": "^6.10.1",
+    "aws-amplify": "^6.15.8",
     "axios": "^1.13.2",
     "next": "16.0.3",
     "react": "19.2.0",
     "react-dom": "19.2.0"
   },
   "devDependencies": {
+    "@aws-sdk/client-cognito-identity": "^3.936.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

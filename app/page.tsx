@@ -1,5 +1,6 @@
 import { NavBar } from "@/components/NavBar";
 import { SideBar } from "@/components/SideBar";
+import TesteS3 from "@/components/TesteS3";
 
 export default function Home() {
   return (
@@ -42,6 +43,10 @@ export default function Home() {
             <p className="text-[#888585] text-2xl cursor-pointer pt-5">
               Atendimentos
             </p>
+          </div>
+           {/* 🔥 Aqui vai o componente de teste */}
+        <div className="p-10">
+          <TesteS3 />
           </div>
         </div>
       </div>
